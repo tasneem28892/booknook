@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 BookNook – Online Library Management System
 
-## Getting Started
+BookNook is an online library management system where users can explore books, borrow books, manage their borrowed books, and return them. It provides a simple and user-friendly platform for managing library activities.
 
-First, run the development server:
+## ✨ Features
+
+- Browse all available books
+- Search and explore books
+- View book details
+- User registration and login
+- Google authentication
+- Add new books
+- Edit and delete books
+- Borrow books
+- View personal borrowing history
+- Return borrowed books
+- User-based access control
+- Responsive design for mobile and desktop
+
+## 🛠️ Technologies Used
+
+**Frontend:**
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- DaisyUI
+- Swiper
+
+**Authentication:**
+- Better Auth
+- JWT
+
+**Backend:**
+- Node.js
+- Express.js
+- TypeScript
+- MongoDB
+
+## 📂 Related Repository
+
+- **Backend:** [BookNook Server](https://github.com/tasneem28892/booknook-server)
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/tasneem28892/booknook.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd booknook
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure environment variables
+
+Create a `.env.local` file in the root directory and add your own credentials:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+BETTER_AUTH_URL=http://localhost:3000
+NEXT_PUBLIC_API_URL=http://localhost:5000
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+```
+
+### 5. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Note:** The backend server must also be running for the application to work properly.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 👩‍💻 Developer
 
-## Learn More
+**Tasneem Rezwana**
 
-To learn more about Next.js, take a look at the following resources:
+- GitHub: [@tasneem28892](https://github.com/tasneem28892)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with ❤️ using Next.js and MongoDB.
