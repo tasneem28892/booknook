@@ -15,6 +15,8 @@ const db = client.db("booknook");
 export const auth = betterAuth({
   baseURL: process.env.BETTER_AUTH_URL,
 
+  secret: process.env.BETTER_AUTH_SECRET,
+
   database: mongodbAdapter(db),
 
   emailAndPassword: {
